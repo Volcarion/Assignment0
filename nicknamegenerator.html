@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Chinese Zodiac</title>
+    <link rel=stylesheet type="text/css" href="style.css">
+    <style type="text/css">
+        .center
+           {
+               margin:auto;
+               width:600px;
+               text-align:justify;
+               padding:10px;
+           }
+    </style>
+    <script>
+
+        function revealName(){
+        //This variable will store the users first name.
+        var firstName = document.getElementById("first").value;
+        //This variable will store the users last name.
+        var lastName = document.getElementById("last").value;
+        var fantasyFirstName;
+        var fantasyLastName;
+
+        var firstNameList = [
+            "Adrik",
+            "Breena",
+            "Ander",
+            "Farideh",
+            "Mindartis",
+            "Finellen",
+            "Erky",
+            "Lavinia",
+            "Medrash",
+            "Naivara",
+            "Kildrak",
+            "Shamil",
+            "Merric",
+            "Kava",
+            "Thamior",
+            "Vistra",
+            "Roondar",
+            "Seraphina",
+            "Rhogar",
+            "Mialee",
+            "Ulfgar",
+            "Nissa",
+            "Perrin",
+            "Mishann",
+            "Quarion",
+            "Felosial"
+            ];
+        var lastNameList = [
+            "Battlehammer",
+            "Daergel",
+            "Goodbarrel",
+            "Fenkenkabradon",
+            "Amastacia",
+            "Rumnaheim",
+            "Nackle",
+            "Thorngage",
+            "Kimbatuul",
+            "Holimion",
+            "Holderhek",
+            "Raulnor",
+            "Tosscobble",
+            "Turnuroth",
+            "Siannodel",
+            "Torunn",
+            "Murnig",
+            "Leagallow",
+            "Nemmonis",
+            "Amakiir",
+            "Strakeln",
+            "Scheppen",
+            "Underbough",
+            "Myastan",
+            "Meliamne",
+            "Liadon"
+            ];
+
+        if (firstName.charAt(0).toLowerCase() == "a"){
+            fantasyFirstName = firstNameList[0];
+            
+        }
+        else if (firstName.charAt(0).toLowerCase() == "b"){
+            fantasyFirstName = firstNameList[1];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "c"){
+            fantasyFirstName = firstNameList[2];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "d"){
+            fantasyFirstName = firstNameList[3];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "e"){
+            fantasyFirstName = firstNameList[4];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "f"){
+            fantasyFirstName = firstNameList[5];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "g"){
+            fantasyFirstName = firstNameList[6];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "h"){
+            fantasyFirstName = firstNameList[7];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "i"){
+            fantasyFirstName = firstNameList[8];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "j"){
+            fantasyFirstName = firstNameList[9];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "k"){
+            fantasyFirstName = firstNameList[10];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "l"){
+            fantasyFirstName = firstNameList[11];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "m"){
+            fantasyFirstName = firstNameList[12];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "n"){
+            fantasyFirstName = firstNameList[13];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "o"){
+            fantasyFirstName = firstNameList[14];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "p"){
+            fantasyFirstName = firstNameList[15];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "q"){
+            fantasyFirstName = firstNameList[16];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "r"){
+            fantasyFirstName = firstNameList[17];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "s"){
+            fantasyFirstName = firstNameList[18];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "t"){
+            fantasyFirstName = firstNameList[19];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "u"){
+            fantasyFirstName = firstNameList[20];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "v"){
+            fantasyFirstName = firstNameList[21];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "w"){
+            fantasyFirstName = firstNameList[22];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "x"){
+            fantasyFirstName = firstNameList[23];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "y"){
+            fantasyFirstName = firstNameList[24];
+        }
+        else if (firstName.charAt(0).toLowerCase() == "z"){
+            fantasyFirstName = firstNameList[25];
+        }
+        else {
+            fantasyFirstName = "";
+        }
+        
+        if (lastName.charAt(0).toLowerCase() == "a"){
+            fantasyLastName = lastNameList[0];
+            
+        }
+        else if (lastName.charAt(0).toLowerCase() == "b"){
+            fantasyLastName = lastNameList[1];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "c"){
+            fantasyLastName = lastNameList[2];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "d"){
+            fantasyLastName = lastNameList[3];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "e"){
+            fantasyLastName = lastNameList[4];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "f"){
+            fantasyLastName = lastNameList[5];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "g"){
+            fantasyLastName = lastNameList[6];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "h"){
+            fantasyLastName = lastNameList[7];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "i"){
+            fantasyLastName = lastNameList[8];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "j"){
+            fantasyLastName = lastNameList[9];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "k"){
+            fantasyLastName = lastNameList[10];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "l"){
+            fantasyLastName = lastNameList[11];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "m"){
+            fantasyLastName = lastNameList[12];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "n"){
+            fantasyLastName = lastNameList[13];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "o"){
+            fantasyLastName = lastNameList[14];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "p"){
+            fantasyLastName = lastNameList[15];
+        }
+        else if (lastName.charAt(0).toLowerCase()== "q"){
+            fantasyLastName = lastNameList[16];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "r"){
+            fantasyLastName = lastNameList[17];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "s"){
+            fantasyLastName = lastNameList[18];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "t"){
+            fantasyLastName = lastNameList[19];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "u"){
+            fantasyLastName = lastNameList[20];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "v"){
+            fantasyLastName = lastNameList[21];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "w"){
+            fantasyLastName = lastNameList[22];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "x"){
+            fantasyLastName = lastNameList[23];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "y"){
+            fantasyLastName = lastNameList[24];
+        }
+        else if (lastName.charAt(0).toLowerCase() == "z"){
+            fantasyLastName = lastNameList[25];
+        }
+        else {
+            fantasyLastName = "";
+        }
+        
+        document.getElementById("result").innerHTML = "Welcome to the realm of fantasy.";
+        document.getElementById("result2").innerHTML = "From this day forth you shall be known as " + fantasyFirstName + " " + fantasyLastName;
+         }
+    </script>
+    </head>
+    <body>
+        <div class="center">
+    <h1>Nickname Generator</h1>
+    <p>How would you like to join the realm of fantasy? </br> Enter your name in the fields provided and find out your new name.</p>
+    <table>
+            <tr>
+                <td><b>First Name:</b></td>
+                <td><input type="text" id="first"/></td>
+            </tr>
+            <tr>
+                <td><b>Last Name:</b></td>
+                <td><input type="text" id="last"/></td>
+            </tr>
+    </table>
+    <br/>
+    <input type="submit" value="Enter the realm" onClick="revealName()"/>
+    <p>
+    <p id="result"></p>
+    <p id="result2"></p>
+    <hr/>
+    <p>Note: The name you receive might be of the other gender and mixed racial origin as I don't have the names separated into racial or gender specific categories.</p>
+    </div>
+    </body>
+</html>
